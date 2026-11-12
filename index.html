@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home · FastIconBD eCommerce HTML Template</title>
+<meta name="description" content="FastIconBD — a free, open-source, fully responsive eCommerce HTML template with 14 ready pages, vanilla JavaScript interactions and zero dependencies.">
+<meta name="author" content="Sultan Bayezid">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__note"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 5.5h12.5v11H1.5z"/><path d="M14 9h4l3 3.5v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/><path d="M8 18h7.5"/></svg> Free delivery on orders over ৳5,000 inside Bangladesh</p>
+    <ul class="topbar__links">
+      <li><a href="#footer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg> +880 1700-000000</a></li>
+      <li><a href="contact.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13.5" width="4" height="6" rx="2"/><rect x="17" y="13.5" width="4" height="6" rx="2"/><path d="M21 19.5v.5a3 3 0 0 1-3 3h-4"/></svg> Help Center</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+    </ul>
+  </div>
+</div>
+<header class="header" id="header">
+  <div class="container header__main">
+    <a class="logo" href="index.html" aria-label="FastIconBD home">
+<svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M35 8 16 36h13l-2.5 20L46 28H33l2-20z" fill="#fff"/></svg>
+<span class="logo__text">FastIcon<em>BD</em></span>
+</a>
+    <form class="header__search" role="search" action="shop.html" onsubmit="return false">
+      <div class="header__search-box">
+        <select class="header__search-cat" aria-label="Search category">
+          <option>All Categories</option><option>Smartphones</option><option>Laptops</option><option>Audio</option><option>Cameras</option><option>Wearables</option><option>Gaming</option><option>Accessories</option><option>Tablets</option>
+        </select>
+        <input type="search" placeholder="Search for products, brands and categories…" aria-label="Search products">
+        <button type="submit" class="header__search-btn" aria-label="Search"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      </div>
+    </form>
+    <div class="header__actions">
+      <a class="header__icon" href="wishlist.html" aria-label="Wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span class="count js-wish-count">0</span></a>
+      <a class="header__icon" href="login.html" aria-label="Account"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+      <a class="header__icon header__icon--cart" href="cart.html" aria-label="Cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg><span class="count js-cart-count">0</span></a>
+      <button class="header__burger" type="button" aria-label="Open menu" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="nav" aria-label="Primary">
+  <div class="container nav__inner">
+    <ul class="nav__list">
+      <li class="nav__item" data-nav="home" data-active><a href="index.html">Home</a></li>
+      <li class="nav__item has-drop" data-nav="shop"><a href="shop.html">Shop <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <ul class="drop">
+          <li><a href="shop.html">All Products</a></li>
+          <li><a href="shop.html">Smartphones</a></li>
+          <li><a href="shop.html">Laptops</a></li>
+          <li><a href="shop.html">Audio</a></li>
+          <li><a href="shop.html">Cameras</a></li>
+          <li><a href="shop.html">Wearables</a></li>
+          <li><a href="shop.html">Gaming</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="nav__item has-drop" data-nav="blog"><a href="blog.html">Blog <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <ul class="drop">
+          <li><a href="blog.html">All Posts</a></li>
+          <li><a href="blog-single.html">Post Detail</a></li>
+        </ul>
+      </li>
+      <li class="nav__item has-drop" data-nav="pages"><a href="about.html">Pages <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <ul class="drop">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="cart.html">Shopping Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="404.html">404 Page</a></li>
+        </ul>
+      </li>
+      <li class="nav__item" data-nav="contact"><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav__deal" href="shop.html">HOT DEALS <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4.4 0 7.5-3 7.5-7.2 0-3.6-2.4-6-4.2-8.2C13.9 5 13 3.4 13 2c-3 2-4.2 5-4.2 6.8 0 .9-.7 1.4-1.4 1-.7-.5-1.2-1.6-1.2-2.6C4.7 9.3 4.5 11.7 4.5 13 4.5 18 7.6 22 12 22z"/><path d="M12 22c2.2 0 3.8-1.7 3.8-4 0-1.9-1.3-3.3-2.4-4.6-.6-.7-1-1.4-1.3-2.2-1.5 1.1-3.9 3.3-3.9 6.8 0 2.3 1.6 4 3.8 4z"/></svg></a>
+  </div>
+</nav>
+<button type="button" class="nav__backdrop" aria-label="Close menu"></button>
+<main id="main">
+<section class="hero" aria-label="Featured promotions">
+  <div class="hero__slider js-hero">
+    <div class="hero__track">
+      <article class="hero__slide hero__slide--1">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="hero__tag">New Season · Tech Fest</span>
+            <h2>Flagship Smartphones<br>at Unmissable Prices</h2>
+            <p>Trade up to the latest Aurora X5 Pro and save up to 14% this week. Genuine warranty, nationwide delivery.</p>
+            <div class="hero__cta">
+              <a href="shop.html" class="btn btn--light">Shop Smartphones <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="product.html" class="btn btn--ghost">View Details</a>
+            </div>
+          </div>
+          <div class="hero__art"><img src="assets/img/hero/hero-1.svg" alt="Smartphone promotion illustration" width="720" height="560"></div>
+        </div>
+      </article>
+      <article class="hero__slide hero__slide--2">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="hero__tag">Audio Week</span>
+            <h2>Feel Every Beat<br>with ANC Headphones</h2>
+            <p>EchoBeat ANC headphones and Orbit earbuds — up to 29% off with a free carrying case while stocks last.</p>
+            <div class="hero__cta">
+              <a href="shop.html" class="btn btn--dark">Shop Audio <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="product.html" class="btn btn--ghost-dark">View Details</a>
+            </div>
+          </div>
+          <div class="hero__art"><img src="assets/img/hero/hero-2.svg" alt="Headphones promotion illustration" width="720" height="560"></div>
+        </div>
+      </article>
+      <article class="hero__slide hero__slide--3">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <span class="hero__tag">Work &amp; Study</span>
+            <h2>Ultrabooks Built<br>for Creators</h2>
+            <p>The Nimbus 14 pairs an all-day battery with a stunning display. Student and freelancer offers available.</p>
+            <div class="hero__cta">
+              <a href="shop.html" class="btn btn--light">Shop Laptops <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="product.html" class="btn btn--ghost">View Details</a>
+            </div>
+          </div>
+          <div class="hero__art"><img src="assets/img/hero/hero-3.svg" alt="Laptop promotion illustration" width="720" height="560"></div>
+        </div>
+      </article>
+    </div>
+    <div class="hero__dots js-hero-dots" role="tablist" aria-label="Slides"></div>
+    <button type="button" class="hero__arrow hero__arrow--prev js-hero-prev" aria-label="Previous slide"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button type="button" class="hero__arrow hero__arrow--next js-hero-next" aria-label="Next slide"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+</section>
+<section class="features">
+  <div class="container features__grid">
+    <div class="feature reveal">
+      <div class="feature__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 5.5h12.5v11H1.5z"/><path d="M14 9h4l3 3.5v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/><path d="M8 18h7.5"/></svg></div>
+      <div><h3>Free &amp; Fast Delivery</h3><p>On all orders over ৳5,000 nationwide</p></div>
+    </div>
+    <div class="feature reveal">
+      <div class="feature__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13.5" width="4" height="6" rx="2"/><rect x="17" y="13.5" width="4" height="6" rx="2"/><path d="M21 19.5v.5a3 3 0 0 1-3 3h-4"/></svg></div>
+      <div><h3>24/7 Customer Support</h3><p>Real humans, always ready to help</p></div>
+    </div>
+    <div class="feature reveal">
+      <div class="feature__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg></div>
+      <div><h3>7-Day Easy Returns</h3><p>No-questions-asked refund policy</p></div>
+    </div>
+    <div class="feature reveal">
+      <div class="feature__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-3.6 8-10V5.5L12 2 4 5.5V12c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg></div>
+      <div><h3>100% Secure Payments</h3><p>bKash, Nagad, cards &amp; cash on delivery</p></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <span class="eyebrow">Browse by category</span>
+  <h2>Shop Our Top Categories</h2>
+  <p>Everything from flagship phones to gaming rigs, all in one place.</p>
+</div>
+    <div class="cat-grid">
+      <a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Smartphones</h3><span>86 productss</span></a><a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="11.5" rx="1.6"/><path d="M1.8 19.5h20.4"/><path d="M9.5 19.5l.9-3h3.2l.9 3"/></svg></div><h3>Laptops</h3><span>42 productss</span></a><a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="13.4" width="4.2" height="6.6" rx="2"/><rect x="16.8" y="13.4" width="4.2" height="6.6" rx="2"/></svg></div><h3>Audio</h3><span>118 productss</span></a><a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.2 7l1.4-2.6h4.8L15.8 7"/><rect x="3" y="7" width="18" height="13" rx="2.2"/><circle cx="12" cy="13.4" r="4"/></svg></div><h3>Cameras</h3><span>35 productss</span></a><a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7.2" y="6" width="9.6" height="12" rx="3"/><path d="M9.5 6V3h5v3M9.5 18v3h5v-3"/><circle cx="12" cy="12" r="2.6"/></svg></div><h3>Wearables</h3><span>57 productss</span></a><a class="cat-card reveal" href="shop.html"><div class="cat-card__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.4 8h9.2a4.8 4.8 0 0 1 4.7 5.7l-.6 3a3 3 0 0 1-5.3 1.2L14 16.4h-4l-1.4 1.5a3 3 0 0 1-5.3-1.2l-.6-3A4.8 4.8 0 0 1 7.4 8z"/><path d="M8 11v4M6 13h4"/><circle cx="15.7" cy="12" r="0.9"/><circle cx="18" cy="14" r="0.9"/></svg></div><h3>Gaming</h3><span>64 productss</span></a>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head">
+  <span class="eyebrow">Handpicked for you</span>
+  <h2>Trending Products</h2>
+  <p>Best sellers, fresh arrivals and all-time favourites from the FastIconBD catalogue.</p>
+</div>
+    <div class="tabs js-tabs" data-tabs>
+      <div class="tabs__bar" role="tablist" aria-label="Product filters">
+        <button type="button" class="tab-btn is-active" data-tab="featured" role="tab" aria-selected="true">Featured</button>
+        <button type="button" class="tab-btn" data-tab="new" role="tab" aria-selected="false">New Arrivals</button>
+        <button type="button" class="tab-btn" data-tab="best" role="tab" aria-selected="false">Best Sellers</button>
+      </div>
+      <div class="tab-panel is-active" id="featured" role="tabpanel">
+        <div class="products-grid">
+          <article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Aurora X5 Pro Smartphone"><img src="assets/img/products/product-01.svg" alt="Aurora X5 Pro Smartphone" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-14%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Aurora X5 Pro Smartphone to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Smartphones</span>
+    <h3 class="product-card__title"><a href="product.html">Aurora X5 Pro Smartphone</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(128)</span>
+    <div class="product-card__price"><ins>৳42,999</ins><del>৳49,999</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="EchoBeat ANC Headphones"><img src="assets/img/products/product-03.svg" alt="EchoBeat ANC Headphones" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-29%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add EchoBeat ANC Headphones to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Audio</span>
+    <h3 class="product-card__title"><a href="product.html">EchoBeat ANC Headphones</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(214)</span>
+    <div class="product-card__price"><ins>৳8,490</ins><del>৳11,990</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Lumen 4K Action Camera"><img src="assets/img/products/product-06.svg" alt="Lumen 4K Action Camera" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-17%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Lumen 4K Action Camera to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Cameras</span>
+    <h3 class="product-card__title"><a href="product.html">Lumen 4K Action Camera</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(71)</span>
+    <div class="product-card__price"><ins>৳18,700</ins><del>৳22,500</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Titan RTX Gaming PC"><img src="assets/img/products/product-08.svg" alt="Titan RTX Gaming PC" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Titan RTX Gaming PC to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Gaming</span>
+    <h3 class="product-card__title"><a href="product.html">Titan RTX Gaming PC</a></h3>
+    <div class="stars" aria-label="Rated 5.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(19)</span>
+    <div class="product-card__price"><ins>৳185,000</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Cyclone Mechanical Keyboard"><img src="assets/img/products/product-10.svg" alt="Cyclone Mechanical Keyboard" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Cyclone Mechanical Keyboard to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Gaming</span>
+    <h3 class="product-card__title"><a href="product.html">Cyclone Mechanical Keyboard</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(152)</span>
+    <div class="product-card__price"><ins>৳6,800</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Vertex 27" QHD Monitor"><img src="assets/img/products/product-13.svg" alt="Vertex 27" QHD Monitor" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">New</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Vertex 27" QHD Monitor to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Displays</span>
+    <h3 class="product-card__title"><a href="product.html">Vertex 27" QHD Monitor</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(37)</span>
+    <div class="product-card__price"><ins>৳26,500</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Zenith Mirrorless Camera"><img src="assets/img/products/product-14.svg" alt="Zenith Mirrorless Camera" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Zenith Mirrorless Camera to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Cameras</span>
+    <h3 class="product-card__title"><a href="product.html">Zenith Mirrorless Camera</a></h3>
+    <div class="stars" aria-label="Rated 5.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(23)</span>
+    <div class="product-card__price"><ins>৳96,000</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="PowerCore 20K Power Bank"><img src="assets/img/products/product-16.svg" alt="PowerCore 20K Power Bank" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">Hot</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add PowerCore 20K Power Bank to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Accessories</span>
+    <h3 class="product-card__title"><a href="product.html">PowerCore 20K Power Bank</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(517)</span>
+    <div class="product-card__price"><ins>৳3,850</ins></div>
+  </div>
+</article>
+        </div>
+      </div>
+      <div class="tab-panel" id="new" role="tabpanel">
+        <div class="products-grid">
+          <article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Nimbus 14 Ultrabook"><img src="assets/img/products/product-02.svg" alt="Nimbus 14 Ultrabook" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">New</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Nimbus 14 Ultrabook to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Laptops</span>
+    <h3 class="product-card__title"><a href="product.html">Nimbus 14 Ultrabook</a></h3>
+    <div class="stars" aria-label="Rated 5.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(46)</span>
+    <div class="product-card__price"><ins>৳89,500</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="PulseFit S2 Smartwatch"><img src="assets/img/products/product-05.svg" alt="PulseFit S2 Smartwatch" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">New</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add PulseFit S2 Smartwatch to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Wearables</span>
+    <h3 class="product-card__title"><a href="product.html">PulseFit S2 Smartwatch</a></h3>
+    <div class="stars" aria-label="Rated 4.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(58)</span>
+    <div class="product-card__price"><ins>৳12,900</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Vertex 27" QHD Monitor"><img src="assets/img/products/product-13.svg" alt="Vertex 27" QHD Monitor" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">New</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Vertex 27" QHD Monitor to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Displays</span>
+    <h3 class="product-card__title"><a href="product.html">Vertex 27" QHD Monitor</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(37)</span>
+    <div class="product-card__price"><ins>৳26,500</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Nova Tab 11 Tablet"><img src="assets/img/products/product-09.svg" alt="Nova Tab 11 Tablet" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-10%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Nova Tab 11 Tablet to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Tablets</span>
+    <h3 class="product-card__title"><a href="product.html">Nova Tab 11 Tablet</a></h3>
+    <div class="stars" aria-label="Rated 4.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(64)</span>
+    <div class="product-card__price"><ins>৳39,900</ins><del>৳44,500</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Zenith Mirrorless Camera"><img src="assets/img/products/product-14.svg" alt="Zenith Mirrorless Camera" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Zenith Mirrorless Camera to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Cameras</span>
+    <h3 class="product-card__title"><a href="product.html">Zenith Mirrorless Camera</a></h3>
+    <div class="stars" aria-label="Rated 5.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(23)</span>
+    <div class="product-card__price"><ins>৳96,000</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Volt 65W GaN Charger"><img src="assets/img/products/product-04.svg" alt="Volt 65W GaN Charger" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Volt 65W GaN Charger to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Accessories</span>
+    <h3 class="product-card__title"><a href="product.html">Volt 65W GaN Charger</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(96)</span>
+    <div class="product-card__price"><ins>৳2,150</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Glide Pro Wireless Mouse"><img src="assets/img/products/product-11.svg" alt="Glide Pro Wireless Mouse" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Glide Pro Wireless Mouse to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Accessories</span>
+    <h3 class="product-card__title"><a href="product.html">Glide Pro Wireless Mouse</a></h3>
+    <div class="stars" aria-label="Rated 4.0 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(88)</span>
+    <div class="product-card__price"><ins>৳3,200</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Sonus Bluetooth Speaker"><img src="assets/img/products/product-12.svg" alt="Sonus Bluetooth Speaker" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-22%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Sonus Bluetooth Speaker to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Audio</span>
+    <h3 class="product-card__title"><a href="product.html">Sonus Bluetooth Speaker</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(203)</span>
+    <div class="product-card__price"><ins>৳5,600</ins><del>৳7,200</del></div>
+  </div>
+</article>
+        </div>
+      </div>
+      <div class="tab-panel" id="best" role="tabpanel">
+        <div class="products-grid">
+          <article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="PowerCore 20K Power Bank"><img src="assets/img/products/product-16.svg" alt="PowerCore 20K Power Bank" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">Hot</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add PowerCore 20K Power Bank to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Accessories</span>
+    <h3 class="product-card__title"><a href="product.html">PowerCore 20K Power Bank</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(517)</span>
+    <div class="product-card__price"><ins>৳3,850</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Orbit Wireless Earbuds"><img src="assets/img/products/product-07.svg" alt="Orbit Wireless Earbuds" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--soft">Hot</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Orbit Wireless Earbuds to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Audio</span>
+    <h3 class="product-card__title"><a href="product.html">Orbit Wireless Earbuds</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(342)</span>
+    <div class="product-card__price"><ins>৳4,350</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Sonus Bluetooth Speaker"><img src="assets/img/products/product-12.svg" alt="Sonus Bluetooth Speaker" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-22%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Sonus Bluetooth Speaker to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Audio</span>
+    <h3 class="product-card__title"><a href="product.html">Sonus Bluetooth Speaker</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(203)</span>
+    <div class="product-card__price"><ins>৳5,600</ins><del>৳7,200</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="EchoBeat ANC Headphones"><img src="assets/img/products/product-03.svg" alt="EchoBeat ANC Headphones" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-29%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add EchoBeat ANC Headphones to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Audio</span>
+    <h3 class="product-card__title"><a href="product.html">EchoBeat ANC Headphones</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(214)</span>
+    <div class="product-card__price"><ins>৳8,490</ins><del>৳11,990</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Cyclone Mechanical Keyboard"><img src="assets/img/products/product-10.svg" alt="Cyclone Mechanical Keyboard" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Cyclone Mechanical Keyboard to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Gaming</span>
+    <h3 class="product-card__title"><a href="product.html">Cyclone Mechanical Keyboard</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(152)</span>
+    <div class="product-card__price"><ins>৳6,800</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Volt 65W GaN Charger"><img src="assets/img/products/product-04.svg" alt="Volt 65W GaN Charger" width="600" height="600" loading="lazy"></a>
+    
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Volt 65W GaN Charger to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Accessories</span>
+    <h3 class="product-card__title"><a href="product.html">Volt 65W GaN Charger</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(96)</span>
+    <div class="product-card__price"><ins>৳2,150</ins></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="AeroDrone Mini 3"><img src="assets/img/products/product-15.svg" alt="AeroDrone Mini 3" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-13%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add AeroDrone Mini 3 to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Drones</span>
+    <h3 class="product-card__title"><a href="product.html">AeroDrone Mini 3</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(41)</span>
+    <div class="product-card__price"><ins>৳54,000</ins><del>৳62,000</del></div>
+  </div>
+</article><article class="product-card  reveal">
+  <div class="product-card__media">
+    <a href="product.html" aria-label="Aurora X5 Pro Smartphone"><img src="assets/img/products/product-01.svg" alt="Aurora X5 Pro Smartphone" width="600" height="600" loading="lazy"></a>
+    <span class="badge badge--sale">-14%</span>
+    <div class="product-card__hover">
+      <button type="button" class="icon-btn js-wishlist" aria-label="Add Aurora X5 Pro Smartphone to wishlist"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+      <button type="button" class="icon-btn js-quickview" aria-label="Quick view"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    <button type="button" class="btn btn--primary btn--sm product-card__cart js-add-cart"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2.5 3.5h2.6l2.4 11.4a1.8 1.8 0 0 0 1.8 1.4h8.2a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg> Add to Cart</button>
+  </div>
+  <div class="product-card__body">
+    <span class="product-card__cat">Smartphones</span>
+    <h3 class="product-card__title"><a href="product.html">Aurora X5 Pro Smartphone</a></h3>
+    <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div><span class="product-card__reviews">(128)</span>
+    <div class="product-card__price"><ins>৳42,999</ins><del>৳49,999</del></div>
+  </div>
+</article>
+        </div>
+      </div>
+    </div>
+    <div class="center"><a href="shop.html" class="btn btn--outline">View All Products <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="deal reveal">
+      <div class="deal__media">
+        <img src="assets/img/products/product-03.svg" alt="EchoBeat ANC Headphones" width="600" height="600">
+        <span class="badge badge--sale">-29%</span>
+      </div>
+      <div class="deal__body">
+        <span class="eyebrow">Deal of the day</span>
+        <h2>EchoBeat ANC Headphones — ৳8,490 <del>৳11,990</del></h2>
+        <p>Active noise cancellation, 40-hour battery life and studio-grade drivers. Limited stock at this price — the offer ends when the timer hits zero.</p>
+        <div class="countdown js-countdown" data-countdown aria-label="Time remaining for this deal">
+          <div class="countdown__cell"><span class="js-cd-days">00</span><small>Days</small></div>
+          <div class="countdown__cell"><span class="js-cd-hours">00</span><small>Hours</small></div>
+          <div class="countdown__cell"><span class="js-cd-mins">00</span><small>Minutes</small></div>
+          <div class="countdown__cell"><span class="js-cd-secs">00</span><small>Seconds</small></div>
+        </div>
+        <div class="deal__stock">
+          <div class="deal__progress" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><span style="width:78%"></span></div>
+          <p><strong>78 of 100</strong> already sold — hurry, only 22 left!</p>
+        </div>
+        <a href="product.html" class="btn btn--accent">Grab the Deal <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5 4.5 13.5h5.5l-1 8 8.5-11h-5.5l1-8z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container banners">
+    <a class="banner banner--indigo reveal" href="shop.html">
+      <div>
+        <span class="banner__tag">Laptops Week</span>
+        <h3>Up to 40% off<br>ultrabooks &amp; 2-in-1s</h3>
+        <span class="btn btn--light btn--sm">Shop Now <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <img src="assets/img/banners/banner-1.svg" alt="" width="480" height="300" loading="lazy">
+    </a>
+    <a class="banner banner--amber reveal" href="shop.html">
+      <div>
+        <span class="banner__tag">Buy 1 Get 1</span>
+        <h3>Audio accessories<br>for music lovers</h3>
+        <span class="btn btn--dark btn--sm">Shop Now <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <img src="assets/img/banners/banner-2.svg" alt="" width="480" height="300" loading="lazy">
+    </a>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+  <span class="eyebrow">Wall of love</span>
+  <h2>What Our Customers Say</h2>
+  <p>More than 25,000 shoppers across Bangladesh trust FastIconBD stores.</p>
+</div>
+    <div class="testi-grid">
+      <figure class="testi reveal">
+        <div class="stars" aria-label="Rated 5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div>
+        <blockquote>“Ordered a smartwatch on Friday and it arrived Sunday morning. Packaging was perfect and the price beat every other shop in town.”</blockquote>
+        <figcaption><img src="assets/img/avatars/avatar-1.svg" alt="" width="240" height="240" loading="lazy"><div><strong>Tanvir Ahmed</strong><span>Dhaka</span></div></figcaption>
+      </figure>
+      <figure class="testi reveal">
+        <div class="stars" aria-label="Rated 4.5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--half"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div>
+        <blockquote>“The product pages are honest — what you read is what you get. Support answered my questions on WhatsApp within minutes.”</blockquote>
+        <figcaption><img src="assets/img/avatars/avatar-2.svg" alt="" width="240" height="240" loading="lazy"><div><strong>Nusrat Jahan</strong><span>Chattogram</span></div></figcaption>
+      </figure>
+      <figure class="testi reveal">
+        <div class="stars" aria-label="Rated 5 out of 5"><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span class="star star--full"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span></div>
+        <blockquote>“Returned a keyboard with zero hassle and the refund landed on bKash the same day. This is how online shopping should feel.”</blockquote>
+        <figcaption><img src="assets/img/avatars/avatar-3.svg" alt="" width="240" height="240" loading="lazy"><div><strong>Arif Chowdhury</strong><span>Sylhet</span></div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <span class="eyebrow">From the FastIconBD blog</span>
+  <h2>Buying Guides &amp; Tech News</h2>
+  <p>Tips, reviews and deals straight from our editors.</p>
+</div>
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <a href="blog-single.html" class="blog-card__media"><img src="assets/img/blog/blog-1.svg" alt="" width="800" height="520" loading="lazy"></a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta"><span>Shopping Guides</span> · <time datetime="2026-10-28">Oct 28, 2026</time></div>
+          <h3><a href="blog-single.html">How to Pick the Right Smartphone in 2026: A Practical Checklist</a></h3>
+          <p>Cameras, chips or battery — what actually matters for your budget? Our editors break it down.</p>
+          <a class="link-more" href="blog-single.html">Read Article <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <a href="blog-single.html" class="blog-card__media"><img src="assets/img/blog/blog-3.svg" alt="" width="800" height="520" loading="lazy"></a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta"><span>Gadget Reviews</span> · <time datetime="2026-10-19">Oct 19, 2026</time></div>
+          <h3><a href="blog-single.html">EchoBeat ANC Headphones: Two Weeks In</a></h3>
+          <p>Forty hours of battery, real noise cancellation and a price that hurts nothing. Here is our verdict.</p>
+          <a class="link-more" href="blog-single.html">Read Article <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="blog-card reveal">
+        <a href="blog-single.html" class="blog-card__media"><img src="assets/img/blog/blog-4.svg" alt="" width="800" height="520" loading="lazy"></a>
+        <div class="blog-card__body">
+          <div class="blog-card__meta"><span>Wearables</span> · <time datetime="2026-10-08">Oct 8, 2026</time></div>
+          <h3><a href="blog-single.html">Five Reasons a Smartwatch Will Actually Change Your Day</a></h3>
+          <p>From sleep tracking to contactless payments — the everyday wins of wearing a tiny computer.</p>
+          <a class="link-more" href="blog-single.html">Read Article <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="newsletter">
+  <div class="container newsletter__inner reveal">
+    <div>
+      <h2>Get 10% Off Your First Order</h2>
+      <p>Join the FastIconBD newsletter for exclusive deals, new arrivals and tech tips. No spam, unsubscribe anytime.</p>
+    </div>
+    <form class="newsletter__form" onsubmit="return false">
+      <label class="sr-only" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn--accent">Subscribe <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__about">
+        <a class="logo" href="index.html" aria-label="FastIconBD home">
+<svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg)"/><path d="M35 8 16 36h13l-2.5 20L46 28H33l2-20z" fill="#fff"/></svg>
+<span class="logo__text">FastIcon<em>BD</em></span>
+</a>
+        <p>FastIconBD is a modern, fully responsive eCommerce HTML template crafted for online stores of any size. Clean code, zero dependencies, built to be customized.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter / X"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h4.5l4.5 6L18 4h2l-6.3 7.6L20.5 20H16l-4.8-6.4L5.5 20h-2l6.7-8.1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.5 12s0-3.4-.4-5a2.8 2.8 0 0 0-2-2C18.4 4.5 12 4.5 12 4.5s-6.4 0-8.1.5a2.8 2.8 0 0 0-2 2c-.4 1.6-.4 5-.4 5s0 3.4.4 5a2.8 2.8 0 0 0 2 2c1.7.5 8.1.5 8.1.5s6.4 0 8.1-.5a2.8 2.8 0 0 0 2-2c.4-1.6.4-5 .4-5z"/><path d="m10 9 5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Customer Care</h4>
+        <ul class="footer__links">
+          <li><a href="faq.html">Track Your Order</a></li>
+          <li><a href="faq.html">Shipping &amp; Delivery</a></li>
+          <li><a href="faq.html">Returns &amp; Refunds</a></li>
+          <li><a href="faq.html">Payment Methods</a></li>
+          <li><a href="login.html">My Account</a></li>
+          <li><a href="contact.html">Support Center</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__title">Get in Touch</h4>
+        <ul class="footer__contact">
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> <span>Level 8, Bashundhara City, Panthapath, Dhaka 1205, Bangladesh</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg> <span>+880 1700-000000</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> <span>support@fasticonbd.com</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> <span>Saturday – Thursday, 9:00 – 20:00</span></li>
+        </ul>
+        <div class="payments" aria-label="Accepted payment methods">
+          <span class="pay-chip">VISA</span><span class="pay-chip">Mastercard</span><span class="pay-chip">bKash</span><span class="pay-chip">Nagad</span><span class="pay-chip">COD</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 FastIconBD. Released open-source under the MIT License.</p>
+      <p class="footer__credit">Designed &amp; developed by <a href="https://lastlineweb.com" rel="noopener">Sultan Bayezid</a></p>
+    </div>
+  </div>
+</footer>
+<button type="button" class="back-to-top" aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="toast-region" aria-live="polite"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

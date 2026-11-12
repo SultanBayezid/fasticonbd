@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img"><rect width="1200" height="460" rx="20" fill="#eef2ff"/>
+<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="2" fill="#c7d2fe"/></pattern></defs>
+<rect width="1200" height="460" rx="20" fill="url(#dots)"/>
+<path d="M-20 320C160 300 240 180 420 200s240 160 420 110 260-190 420-150" fill="none" stroke="#a5b4fc" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+<path d="M-20 120C200 160 320 90 520 120s300 200 500 140 200-90 220-70" fill="none" stroke="#a5b4fc" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+<path d="M180 -20C220 140 340 200 300 480" fill="none" stroke="#a5b4fc" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+<path d="M900 -20C860 160 980 260 940 480" fill="none" stroke="#a5b4fc" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+<circle cx="600" cy="230" r="70" fill="#6366f1" opacity="0.12"/>
+<circle cx="600" cy="230" r="34" fill="#6366f1" opacity="0.22"/>
+<path d="M600 130c-26 0-46 20-46 46 0 34 46 84 46 84s46-50 46-84c0-26-20-46-46-46z" fill="#4f46e5"/>
+<circle cx="600" cy="176" r="14" fill="#ffffff"/>
+<text x="600" y="286" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#4338ca">FastIconBD Flagship Store — Panthapath, Dhaka</text></svg>

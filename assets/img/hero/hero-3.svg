@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img"><defs><linearGradient id="s3" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#6366f1"/>
+</linearGradient></defs>
+<circle cx="380" cy="260" r="220" fill="#bae6fd" opacity="0.5"/>
+<circle cx="150" cy="440" r="80" fill="#e0f2fe" opacity="0.7"/>
+<g transform="translate(170,190)">
+  <rect x="0" y="0" width="380" height="240" rx="18" fill="#ffffff"/>
+  <rect x="16" y="16" width="348" height="208" rx="10" fill="url(#s3)"/>
+  <rect x="44" y="52" width="130" height="12" rx="6" fill="#ffffff" opacity="0.85"/>
+  <rect x="44" y="78" width="90" height="12" rx="6" fill="#ffffff" opacity="0.5"/>
+  <rect x="44" y="112" width="292" height="86" rx="12" fill="#ffffff" opacity="0.2"/>
+  <g transform="translate(150,124)" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="0" width="80" height="52" rx="7"/><path d="M26 52 20 64h40l-6-12"/></g>
+  <rect x="230" y="46" width="106" height="12" rx="6" fill="#ffffff" opacity="0.5"/>
+  <rect x="270" y="72" width="66" height="12" rx="6" fill="#ffffff" opacity="0.35"/>
+</g>
+<path d="M120 430h480l-24 40H144z" fill="#e2e8f0"/>
+<path d="M120 430h480" stroke="#cbd5e1" stroke-width="4"/>
+<circle cx="600" cy="120" r="12" fill="#ffffff" opacity="0.8"/>
+<circle cx="120" cy="140" r="8" fill="#ffffff" opacity="0.8"/></svg>
